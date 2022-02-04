@@ -1,0 +1,9 @@
+{
+  "name": "newsletter-signup-form",
+  "version": "1.0.0",
+  "description": "A newsletter signup form page",
+  "main": "app.js",
+  "repository": "https://github.com/gizellysteffanny/newsletter-signup-form.git",
+  "author": "Gizelly Steffanny <gizellysteffanny@gmail.com>",
+  "license": "MIT"
+}
