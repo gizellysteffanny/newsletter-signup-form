@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap');
+
+$font-family: 'Poppins', sans-serif;
+$font-regular: 100;
+$font-medium: 500;
+
+$font-base-size: 16px;
+$title-size: 24px;
+$text-size: 14px;
+$cta-size: 16px;
+
+.title {
+   color: $title-color;
+   font-size: $title-size;
+   font-weight: $font-medium;
+}
+
+.text {
+   color: $text-color;
+   font-size: $text-size;
+   font-weight: $font-regular;
+}
