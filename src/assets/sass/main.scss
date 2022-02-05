@@ -31,6 +31,25 @@ body {
             &__header {
                display: flex;
                justify-content: flex-end;
+
+               a {
+                  height: 32px;
+                  width: 32px;
+                  border-radius: 50%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  transition: background-color ease-in-out .2s;
+
+                  &:hover {
+                     background-color: $hover-color-light;
+                  }
+
+                  img {
+                     height: 16px;
+                     width: 16px;
+                  }
+               }
             }
 
             &__content {
@@ -96,6 +115,11 @@ body {
             &__footer {
                a {
                   text-decoration: none;
+                  transition: text-decoration ease-in-out .2s;
+
+                  &:hover {
+                     text-decoration: underline;
+                  }
                }
             }
          }
