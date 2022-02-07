@@ -1,0 +1,30 @@
+name: CI/CD for deploy
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  CI-CD-DEPLOY:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Node.js
+        uses: actions/setup-node@master
+        with:
+          node-version: '12.x'
+      
+      - name: Install
+      - run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        run: npm run deploy
+
